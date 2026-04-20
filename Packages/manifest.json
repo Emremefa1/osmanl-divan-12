@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.ammariqais.skiaforunity": "https://github.com/ammariqais/SkiaForUnity.git?path=SkiaUnity/Assets/SkiaSharp",
+    "com.gilzoide.lottie-player": "https://github.com/gilzoide/unity-lottie-player.git#1.1.1",
     "com.unity.collab-proxy": "2.11.3",
     "com.unity.feature.2d": "2.0.1",
     "com.unity.ide.rider": "3.0.39",
