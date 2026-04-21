@@ -1250,6 +1250,7 @@ MonoBehaviour:
   _width: 1920
   _height: 1080
   _volume: 1
+  _playbackSpeed: 1
   _hideWhenIdle: 1
   _keepLastFrame: 0
 --- !u!328 &959254415
@@ -1272,7 +1273,7 @@ VideoPlayer:
   m_AspectRatio: 2
   m_DataSource: 0
   m_TimeUpdateMode: 2
-  m_PlaybackSpeed: 1
+  m_PlaybackSpeed: 0.5
   m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}

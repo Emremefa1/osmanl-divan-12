@@ -28,6 +28,10 @@ namespace OsmanliDivani.Game
         [Header("Ses")]
         [SerializeField, Range(0f, 1f)] private float _volume = 1f;
 
+        [Header("Hız")]
+        [Tooltip("Oynatma hızı çarpanı. 1 = normal, 0.5 = yarı hız, 2 = iki kat.")]
+        [SerializeField, Range(0.1f, 4f)] private float _playbackSpeed = 1f;
+
         [Header("Davranış")]
         [Tooltip("Hiçbir şey oynamadığında RawImage'ı gizle.")]
         [SerializeField] private bool _hideWhenIdle = false;
@@ -215,6 +219,7 @@ namespace OsmanliDivani.Game
             _player.SetDirectAudioVolume(0, _volume);
             _player.waitForFirstFrame = true;
             _player.skipOnDrop = true;
+            _player.playbackSpeed = Mathf.Max(0.01f, _playbackSpeed);
 
             _rawImage.texture = _renderTexture;
             _rawImage.color = Color.white;
